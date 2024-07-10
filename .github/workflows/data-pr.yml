@@ -18,7 +18,7 @@ jobs:
       uses: actions/checkout@v2
     - name: 📌 Create issue
       uses: JasonEtco/create-an-issue@v2
-        env:
-          GITHUB_TOKEN: ${{ secrets.ACTION_PAT }}
-        with:
-          filename: .github/DATA_PR_TEMPLATE.md
+      env:
+        GITHUB_TOKEN: ${{ secrets.ACTION_PAT }}
+      with:
+        filename: .github/DATA_PR_TEMPLATE.md
