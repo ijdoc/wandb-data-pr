@@ -1,5 +1,5 @@
 ---
-title: {{ payload.sender.login }} has logged a new data candidate
+title: New data candidate logged
 assignees: ijdoc
 labels: data
 ---
