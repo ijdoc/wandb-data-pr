@@ -3,19 +3,8 @@ title: New data candidate logged
 assignees: ijdoc
 labels: data
 ---
-{{ payload.sender.login }} just logged a new data candidate.
+{{ env.AUTHOR }} just logged a new data candidate to {{ env.ENTITY_NAME }}/{{ env.PROJECT_NAME }}
 
-Tools
-{{ tools.context.payload }}
-
-Context
-{{ context.payload }}
-
-Payload
-{{ payload }}
-
-Event Payload
-{{ github.event.client_payload }}
-
-Event Payload Item
-{{ github.event.client_payload.artifact_collection_name }}
+{{ env.ART_VERSION }}
+{{ env.ART_VERSION_STR }}
+{{ env.ART_COLLECTION }}
