@@ -16,5 +16,9 @@ jobs:
         python-version: '3.9'
     - name: 📌 Checkout repo
       uses: actions/checkout@v2
-    - name: 📌 Run script
-      run: bash create-pr.sh ${{ github.event.client_payload }}
+    - name: 📌 Create issue
+      uses: JasonEtco/create-an-issue@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.ACTION_PAT }}
+        with:
+          filename: .github/DATA_PR_TEMPLATE.md
